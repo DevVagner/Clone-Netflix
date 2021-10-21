@@ -1,0 +1,136 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    overflow-y: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    height: 65px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgb(20, 20, 20));
+}
+
+.nav img {
+    width: 7vw;
+    margin: 22px 0px 0px 54px;
+    z-index: 1;
+}
+
+.container {
+    height: 100vh;
+    background: #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 70vw;
+    height: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.users h1 {
+    color: white;
+    font-size: 3.5vw;
+    margin: 2vw 0;
+}
+
+.list-users li {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.user, .add-user {
+    width: 10vw;
+    height: 189px;
+    margin-right: 1.8vw;
+    cursor: pointer;
+}
+
+.user h3 {
+    display: flex;
+    justify-content: center;
+    color: #808080;
+    font-size: 1.3vw;
+    margin: .6em 0;
+}
+
+.image {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+}
+
+.manager-profile {
+    margin: 2.8vw 0 1em 0;
+    font-size: 1.2vw;
+    border: 1px solid grey;
+    color: grey;
+    padding: .5em 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.add-user img {
+    width: 5.2vw;
+    height: 5.2vw;
+}
+
+.add-user h3 {
+    display: flex;
+    justify-content: center;
+    color: #808080;
+    font-size: 1.3vw;
+    margin: .6em 0;
+}
+
+.add-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 4px;
+}
+
+
+/* Hover */
+
+.user:hover .image {
+    outline: 4px solid rgb(225, 225, 225);
+    outline-offset: -4px;
+}
+
+.user:hover > h3 {
+    color: rgb(225, 225, 225);
+}
+
+.add-user:hover h3 {
+    color: rgb(225, 225, 225);
+}
+
+.add-user:hover .add-div {
+    background-color: rgb(225, 225, 225);
+}
+
+.manager-profile:hover {
+    border: 1px solid rgb(225, 225, 225);
+    color: rgb(225, 225, 225);
+}
